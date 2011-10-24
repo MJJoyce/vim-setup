@@ -16,9 +16,6 @@
 [submodule "bundle/snipMate"]
 	path = bundle/snipMate
 	url = https://github.com/vim-scripts/snipMate.git
-[submodule "bundle/NERD_tree"]
-	path = bundle/NERD_tree
-	url = https://github.com/vim-scripts/NERD_tree-Project.git
 [submodule "bundle/NERD_Commenter"]
 	path = bundle/NERD_Commenter
 	url = https://github.com/vim-scripts/The-NERD-Commenter.git
