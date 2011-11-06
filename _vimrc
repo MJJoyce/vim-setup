@@ -10,3 +10,8 @@ set foldmethod=indent
 set foldnestmax=2
 nnoremap <space> za
 vnoremap <space> zf
+
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
