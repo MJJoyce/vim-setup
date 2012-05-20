@@ -1,0 +1,13 @@
+To add another a submodule
+--------------------------
+Run this from the base .vim folder
+
+git sumbodule add <url to github> <folder to save to>
+
+Then run 
+
+git submodule init
+
+--------------------------
+To update, run the update.sh script
+--------------------------
