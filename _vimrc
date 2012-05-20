@@ -17,6 +17,15 @@ vnoremap <space> zf
 imap jj <esc>
 imap kk <esc>
 
+" Mappings for Syntastic
+"
+" Toggle Syntastic's mode so it doesn't auto scan on save
+nmap <Leader>st :SyntasticToggleMode
+" Bring up the error window to display error messages
+nmap <Leader>sw :Errors
+" Manually run a syntax check
+nmap <Leader>sc :SyntasticCheck
+
 set smartindent
 set tabstop=4
 set shiftwidth=4
