@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/mike/.bash'
-let g:netrw_dirhist_2='/Users/michaeljoyce/.vim'
-let g:netrw_dirhist_3='/Users/michaeljoyce/Dropbox/Class Work/CSCI 565/isi.usc.edu/~pedro/Teaching/CSCI565-Spring12/Projects/Project1/Project1/src/lib'
-let g:netrw_dirhist_4='/Users/michaeljoyce/Coding/raw.mjjoyce.github.com/.git'
-let g:netrw_dirhist_5='/Users/michaeljoyce/robocode/robots/VectorFields'
-let g:netrw_dirhist_6='/Users/michaeljoyce/Dropbox/Class Work/CSCI 565/isi.usc.edu/~pedro/Teaching/CSCI565-Spring12/Projects/Project2/Project2/simulator/examples'
