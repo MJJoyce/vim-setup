@@ -1,23 +1,12 @@
 --------------------------------------------------
-Tips and Things to Remember
---------------------------------------------------
-
-Selecting between some punctuation.
-    vi<some punctuation>
-
-    ex. vi(
-
-Selecting between some punctuation including the punctuation.
-    va<some punctuation>
-
-
---------------------------------------------------
 Pluging Cheat Sheets
 --------------------------------------------------
 
 ------------------------------
 Surround.vim
 ------------------------------
+
+Adds commands for creating, removing, and changing surrounds.
 
 Normal mode
 -----------
@@ -31,7 +20,6 @@ ySS - same as ySs
 
 Visual mode
 -----------
-s   - in visual mode, add a surrounding
 S   - in visual mode, add a surrounding but place text on new line + indent it
 
 Insert mode
@@ -40,3 +28,203 @@ Insert mode
 <CTRL-s><CTRL-s> - in insert mode, add a new line + surrounding + indent
 <CTRL-g>s - same as <CTRL-s>
 <CTRL-g>S - same as <CTRL-s><CTRL-s>
+
+
+------------------------------
+Camel Case Motion
+------------------------------
+
+Adds motion commands for navigating through Camel Case or underscored words in code.
+These commands work in all (?) modes.
+
+,w	-	Jump to the next camel case word
+,e	-	Jump to the end of the camel case word
+'b	-	Jump to the previous camel case word
+
+
+------------------------------
+Indent Guides
+------------------------------
+
+Adds indentation guides.
+
+<leader>ig	-	Toggle guides
+
+
+------------------------------
+Nerd Commenter
+------------------------------
+
+Adds a ton of shortcuts for commenting out code quickly.
+
+[count]<leader>cc |NERDComComment| 
+Comment out the current line or text selected in visual mode. 
+
+[count]<leader>cn |NERDComNestedComment| 
+Same as <leader>cc but forces nesting. 
+
+[count]<leader>c<space> |NERDComToggleComment| 
+Toggles the comment state of the selected line(s). If the topmost selected 
+line is commented, all selected lines are uncommented and vice versa. 
+
+[count]<leader>cm |NERDComMinimalComment| 
+Comments the given lines using only one set of multipart delimiters. 
+
+[count]<leader>ci |NERDComInvertComment| 
+Toggles the comment state of the selected line(s) individually. 
+
+[count]<leader>cs |NERDComSexyComment| 
+Comments out the selected lines ``sexily'' 
+
+[count]<leader>cy |NERDComYankComment| 
+Same as <leader>cc except that the commented line(s) are yanked first. 
+
+<leader>c$ |NERDComEOLComment| 
+Comments the current line from the cursor to the end of line. 
+
+<leader>cA |NERDComAppendComment| 
+Adds comment delimiters to the end of line and goes into insert mode between 
+them. 
+
+|NERDComInsertComment| 
+Adds comment delimiters at the current cursor position and inserts between. 
+Disabled by default. 
+
+<leader>ca |NERDComAltDelim| 
+Switches to the alternative set of delimiters. 
+
+[count]<leader>cl 
+[count]<leader>cb    |NERDComAlignedComment| 
+Same as |NERDComComment| except that the delimiters are aligned down the 
+left side (<leader>cl) or both sides (<leader>cb). 
+
+[count]<leader>cu |NERDComUncommentLine| 
+Uncomments the selected line(s). 
+
+
+------------------------------
+Search Complete
+------------------------------
+
+Adds tab completion for search.
+
+
+------------------------------
+Show Marks
+------------------------------
+
+Shows the marks set in the current buffer.
+
+\mt - Toggles ShowMarks on and off. 
+\mh - Hides an individual mark. 
+\ma - Hides all marks in the current buffer. 
+\mm - Places the next available mark. 
+
+
+------------------------------
+Yank Stack
+------------------------------
+
+Provide a simple kill ring for yanks
+
+meta-p		 - cycle backward through yank history
+meta-shift-p - cycle forward through history
+
+
+------------------------------
+Abolish
+------------------------------
+
+Generate abbreviations simply with the following syntax
+Abolish {despa,sepe}rat{e,es,ed,ing,ely,ion,ions,or}  {despe,sepa}rat{} 
+
+Can also apply to searching, substitution, and grepping
+%Subvert/facilit{y,ies}/building{,s}/g
+Abbreviate with :S
+
+Want to turn fooBar into foo_bar?  Press crs (coerce to snake_case). 
+MixedCase, camelCase, snake_case, and UPPER_CASE are all just 3 keystrokes 
+away.
+
+
+------------------------------
+Fugitive
+------------------------------
+
+
+------------------------------
+Matchit
+------------------------------
+
+Extend % to match more things.
+g% works in reverse.
+
+
+------------------------------
+NERD Tree
+------------------------------
+
+Allows browsing of the file tree in vim.
+
+F9 - toggles NERD Tree
+o  - open a file in a new buffer or open/close a directory
+t  - open a file in a new tab
+i  - open a file in a horizontal split
+s  - open a file in a vertical split
+p  - goto the parent directory
+r  - refresh the current directory
+?  - open/close the help screen
+
+
+------------------------------
+RagTag
+------------------------------
+
+Make writing HTML nicer.
+
+Ctrl+X /     - Automatically close the last tag
+Ctrl+X space - Take the previously typed word and create a tag from it
+Ctrl+X enter - Take the previously typed word and create a tag from it, but
+				separate the tags with a newline.
+Ctrl+X !     - Enter a doctype
+Ctrl+X @     - Link to a CSS file
+Ctrl+X #     - Insert a meta tag
+Ctrl+X $     - Load a JS file
+
+Also, can insert document specific template tags. Examples assume that foo
+was just typed and you're editing an eRuby document.
+
+CTRL+X =	 - foo<%= | %>
+CTRL+X +	 - <%= foo| %>
+CTRL+X -	 - foo<% | %>
+CTRL+X _	 - <% foo| %>
+CTRL+X '	 - foo<%# | %>
+CTRL+X "	 - <%# foo| %>
+
+------------------------------
+snipMate
+------------------------------
+
+Allows snippet insertion and customization.
+
+See :help snipmate for additional info
+
+
+------------------------------
+Syntastic
+------------------------------
+
+Run your code through a linter automatically!
+
+<leader>st - Toggle Syntastic checking
+<leader>sw - Show the errors window
+<leader>sc - Manually run a check
+
+
+------------------------------
+Tabular
+------------------------------
+
+Automatically align based on delimeter.
+
+:Tabularize (:Tab) /<delimeter>
