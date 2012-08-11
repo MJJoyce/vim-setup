@@ -49,3 +49,6 @@
 [submodule "bundle/IndentGuides"]
 	path = bundle/IndentGuides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/YankStack"]
+	path = bundle/YankStack
+	url = git://github.com/maxbrunsfeld/vim-yankstack.git
