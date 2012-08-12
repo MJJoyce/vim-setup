@@ -122,13 +122,11 @@ Shows the marks set in the current buffer.
 
 
 ------------------------------
-Yank Stack
+Yank Ring
 ------------------------------
 
-Provide a simple kill ring for yanks
-
-meta-p		 - cycle backward through yank history
-meta-shift-p - cycle forward through history
+C-p - cycle backward through the yank ring
+C-n - cycle forward through the yank ring
 
 
 ------------------------------
