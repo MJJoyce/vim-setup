@@ -9,6 +9,7 @@ runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -42,6 +43,14 @@ let mapleader = ","
 noremap ; :					   
 " Autosave the buffer when window focus is lost
 autocmd FocusLost * :wa
+
+" Open up the vimrc in a new buffer
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+" Source the vimrc
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+" Paste toggle makes vim handle pasted results better
+set pastetoggle=<F1>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -95,7 +104,10 @@ vnoremap <space> zf
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Invisible character settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+"
+" Note, other characters can be highlighted.
+" For instance, trail:.,extends:#,nbsp:.
+"
 " Toggle invisible characters with \sl
 nmap <leader>sl :set list!<CR>
 " Set custom symbols for certain characters
@@ -135,9 +147,27 @@ endif
 "
 " Rebinding these always results in a E490 coming up. It's really annoying...
 "
+" Currently using defaults, may change later if bindings are needed.
 "map ;w <Plug>CamelCaseMotion_w 
 "map ;b <Plug>CamelCaseMotion_b 
 "map ;e <Plug>CamelCaseMotion_e 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Rainbow Parentheses Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Toggle Rainbow Parentheses
+map <F9> :RainbowParenthesesToggle<CR>			
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Gundo Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Toggle Gundo
+nnoremap <F2> :GundoToggle<CR>
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings for Syntastic
@@ -155,7 +185,7 @@ nmap <Leader>sc :SyntasticCheck
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Bind view toggle
-map <F9> :NERDTreeToggle<CR>
+map <F10> :NERDTreeToggle<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

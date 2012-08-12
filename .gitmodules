@@ -64,3 +64,6 @@
 [submodule "bundle/RainbowParentheses"]
 	path = bundle/RainbowParentheses
 	url = git://github.com/kien/rainbow_parentheses.vim.git
+[submodule "bundle/EasyMotion"]
+	path = bundle/EasyMotion
+	url = https://github.com/Lokaltog/vim-easymotion.git

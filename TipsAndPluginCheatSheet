@@ -52,6 +52,15 @@ Adds indentation guides.
 
 
 ------------------------------
+Easy Motion
+------------------------------
+
+Take the <number> our of <number>w
+
+Initiate motion commands with <leader><leader> to start easy motion.
+
+
+------------------------------
 Nerd Commenter
 ------------------------------
 
@@ -164,14 +173,14 @@ NERD Tree
 
 Allows browsing of the file tree in vim.
 
-F9 - toggles NERD Tree
-o  - open a file in a new buffer or open/close a directory
-t  - open a file in a new tab
-i  - open a file in a horizontal split
-s  - open a file in a vertical split
-p  - goto the parent directory
-r  - refresh the current directory
-?  - open/close the help screen
+<F10> - toggles NERD Tree
+o     - open a file in a new buffer or open/close a directory
+t     - open a file in a new tab
+i     - open a file in a horizontal split
+s     - open a file in a vertical split
+p     - goto the parent directory
+r     - refresh the current directory
+?     - open/close the help screen
 
 
 ------------------------------
@@ -237,6 +246,14 @@ Tabular
 Automatically align based on delimeter.
 
 :Tabularize (:Tab) /<delimeter>
+
+
+------------------------------
+Rainbow Parentheses
+------------------------------
+
+Color parentheses different colors based on nesting
+<F9> toggles
 
 
 ------------------------------
