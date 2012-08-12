@@ -1,3 +1,4 @@
+set nocompatible		" Not strictly needed, but we'll go with it anyway
 filetype off
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -12,10 +13,59 @@ call pathogen#helptags()
 " Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-filetype plugin on
-syntax on
-set cindent
-set number
+filetype plugin on             " Allow filetype plugins
+syntax on                      " Turn syntax highlighting on
+set autoindent                 " Turn on auto indent
+" set cindent				   " Uses a stricter indenting method. Not sure if I want it
+set scrolloff=3                " Sets an offset for the cursor where scrolling begins.
+set showmode                   " Show the mode of the editor.
+set showcmd                    " Show keyboard state in normal mode.
+set hidden                     " Allow hidden buffers to have unsaved state.
+set wildmenu                   " Make tab completion related things work better.
+set wildmode=list:longest
+set visualbell                 " No more beeping alerts.
+set cursorline                 " Highlight the whole line where the cursor is.
+set ttyfast                    " Faster scrolling.
+set ruler                      " Draw cursor location information in the bottom bar.
+set backspace=indent,eol,start " Make backspace work over linebreaks.
+set laststatus=2               " Give the status line a dedicated line on the bottom.
+set undofile                   " Save undo-s in a file so you can undo after opening a file.
+
+" Escape out of insert mode with jj
+imap jj <esc>                  
+" Escape out of insert mode with k
+imap kk <esc>                  
+
+" Set the Leader
+let mapleader = ","
+" Let semicolon be used for colon
+noremap ; :					   
+" Autosave the buffer when window focus is lost
+autocmd FocusLost * :wa
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Search Related Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable Vim's weird regex system for searching
+nnoremap / /\v                    
+vnoremap / /\v
+set ignorecase                    " Default to ignoring case in search
+set smartcase                     " If there is a combination of case, don't ignore case
+set gdefault                      " Default to global replace. use g to disable now
+set incsearch                     " This + next 2 highlight search results as typed
+set showmatch
+set hlsearch
+" Clear search highlight
+nnoremap <leader><space> :noh<cr> 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Setup Line Numbering
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set relativenumber								" Default to relative #'s
+autocmd InsertEnter * :set number				" Absolute #'s in insert mode
+autocmd InsertLeave * :set relativenumber		" Relative #'s in normal mode
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Setup colorscheme 
@@ -57,11 +107,10 @@ highlight SpecialKey guifg=#586e75
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Misc. keybindings
+" Column coloring settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-imap jj <esc>
-imap kk <esc>
+set colorcolumn=80
+highlight ColorColumn guibg=#586e75
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -80,6 +129,15 @@ if has("autocmd")
     autocmd FileType python setlocal ts=4 sts=4 sw=4 et
 endif
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Mappings for CamelCaseMotion
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" Rebinding these always results in a E490 coming up. It's really annoying...
+"
+"map ;w <Plug>CamelCaseMotion_w 
+"map ;b <Plug>CamelCaseMotion_b 
+"map ;e <Plug>CamelCaseMotion_e 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings for Syntastic
