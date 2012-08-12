@@ -55,3 +55,6 @@
 [submodule "bundle/YankRing"]
 	path = bundle/YankRing
 	url = git://github.com/vim-scripts/YankRing.vim.git
+[submodule "bundle/Gundo"]
+	path = bundle/Gundo
+	url = git://github.com/sjl/gundo.vim.git
