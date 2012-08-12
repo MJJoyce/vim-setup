@@ -213,6 +213,15 @@ Note, the default binding has been changed to:
 
 
 ------------------------------
+SuperTab
+------------------------------
+
+Tab completion.
+
+<Tab> Move forward through options
+<S-Tab> Move backwark through options
+
+------------------------------
 Syntastic
 ------------------------------
 

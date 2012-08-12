@@ -52,3 +52,6 @@
 [submodule "bundle/YankStack"]
 	path = bundle/YankStack
 	url = git://github.com/maxbrunsfeld/vim-yankstack.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
