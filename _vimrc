@@ -26,8 +26,9 @@ set wildmenu                   " Make tab completion related things work better.
 set wildmode=list:longest
 set visualbell                 " No more beeping alerts.
 set cursorline                 " Highlight the whole line where the cursor is.
-set ttyfast                    " Faster scrolling.
+set ttyfast                    " Fast connection (?) setting
 set ruler                      " Draw cursor location information in the bottom bar.
+set splitbelow				   " Split windows below current window.
 set backspace=indent,eol,start " Make backspace work over linebreaks.
 set laststatus=2               " Give the status line a dedicated line on the bottom.
 set undofile                   " Save undo-s in a file so you can undo after opening a file.
