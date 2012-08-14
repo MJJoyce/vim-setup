@@ -70,3 +70,12 @@
 [submodule "bundle/ZoomWin"]
 	path = bundle/ZoomWin
 	url = git://github.com/vim-scripts/ZoomWin.git
+[submodule "bundle/tlib"]
+	path = bundle/tlib
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/addon_mw_utils"]
+	path = bundle/addon_mw_utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/SnipMateSnippets"]
+	path = bundle/SnipMateSnippets
+	url = https://github.com/honza/snipmate-snippets.git
