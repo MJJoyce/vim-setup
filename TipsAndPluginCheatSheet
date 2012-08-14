@@ -44,7 +44,16 @@ These commands work in all (?) modes.
 
 ,w	-	Jump to the next camel case word
 ,e	-	Jump to the end of the camel case word
-'b	-	Jump to the previous camel case word
+,b	-	Jump to the previous camel case word
+
+
+------------------------------
+Zoom Win
+------------------------------
+
+Maximize windows with a keypress!
+
+Ctrl+w o - Maximize/Return to normal the current window.
 
 
 ------------------------------
