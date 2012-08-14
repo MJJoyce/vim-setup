@@ -10,9 +10,6 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
-[submodule "bundle/snipMate"]
-	path = bundle/snipMate
-	url = https://github.com/vim-scripts/snipMate.git
 [submodule "bundle/NERD_Commenter"]
 	path = bundle/NERD_Commenter
 	url = https://github.com/vim-scripts/The-NERD-Commenter.git
@@ -79,3 +76,6 @@
 [submodule "bundle/SnipMateSnippets"]
 	path = bundle/SnipMateSnippets
 	url = https://github.com/honza/snipmate-snippets.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/honza/vim-snipmate.git
