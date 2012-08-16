@@ -4,6 +4,7 @@ Plugin and Keybinding Cheat Sheets
 
 <F1>  - Toggle Paste Mode
 <F2>  - Toggle Gundo
+<F5>  - Toggle TagBar
 <F9>  - Toggle Rainbow Parentheses
 <F10> - Toggle NERD Tree
 
@@ -353,3 +354,56 @@ table > tr*2 > td.name + td*3 expands to:
         </ul>
         <p>Footer</p>
     </div>
+
+
+------------------------------
+TagBar
+------------------------------
+
+<F5> - Toggle TagBar
+
+--------- General ---------
+<Enter> : Jump to tag definition
+p       : As above, but stay in
+	   Tagbar window
+<C-N>   : Go to next top-level tag
+<C-P>   : Go to previous top-level tag
+<Space> : Display tag prototype
+
+---------- Folds ----------
++, zo   : Open fold
+-, zc   : Close fold
+o, za   : Toggle fold
+*, zR   : Open all folds
+=, zM   : Close all folds
+
+---------- Misc -----------
+s       : Toggle sort
+x       : Zoom window in/out
+q       : Close window
+<F1>    : Remove help
+
+--------------------------------------------------
+Misc. Keybindings Worth Remembering
+--------------------------------------------------
+
+------------------------------
+Folding
+------------------------------
+zf#j creates a fold from the cursor down # lines.
+zf/ string creates a fold from the cursor to string .
+zj moves the cursor to the next fold.
+zk moves the cursor to the previous fold.
+zo opens a fold at the cursor.
+zO opens all folds at the cursor.
+zm increases the foldlevel by one.
+zM closes all open folds.
+zr decreases the foldlevel by one.
+zR decreases the foldlevel to zero -- all folds will be open.
+zd deletes the fold at the cursor.
+zE deletes all folds.
+[z move to start of open fold.
+]z move to end of open fold.
+
+
+------------------------------

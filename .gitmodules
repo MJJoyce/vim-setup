@@ -82,3 +82,6 @@
 [submodule "bundle/MiniBufExpl"]
 	path = bundle/MiniBufExpl
 	url = git://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/TagBar"]
+	path = bundle/TagBar
+	url = git://github.com/majutsushi/tagbar.git
