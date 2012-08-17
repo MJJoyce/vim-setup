@@ -53,6 +53,12 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " Paste toggle makes vim handle pasted results better
 set pastetoggle=<F1>
 
+" Use Unicode encoding
+set encoding=utf-8
+
+" Set the Desired font
+set guifont=inconsolata:h13
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Search Related Settings
