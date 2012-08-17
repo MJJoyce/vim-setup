@@ -59,6 +59,11 @@ set encoding=utf-8
 " Set the Desired font
 set guifont=inconsolata:h13
 
+" Turn off the toolbar in MacVim
+if has("gui_running")
+	set guioptions-=T
+endif
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Search Related Settings
