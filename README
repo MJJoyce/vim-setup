@@ -1,3 +1,9 @@
+Initial install
+--------------------------
+git submodule init
+git submodule udpate
+
+--------------------------
 To add another a submodule
 --------------------------
 Run this from the base .vim folder
